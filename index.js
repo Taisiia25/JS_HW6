@@ -38,6 +38,10 @@ console.log('Exercise 4')
 // кондидата в массиве condidateArr. Функция должна будет вставить кандидата переданного через 
 // первый параметр в массив перед кондидатом у которого id равно тому что передали во-втором параметре
 
+const obj5 = {
+  id: 3,
+  name: 'Vasya'
+}
 
 const insertIntoarr = (candidate, id) => {
     const index = condidateArr.findIndex((item) => item._id === id)
@@ -46,6 +50,8 @@ const insertIntoarr = (candidate, id) => {
   
     return condidateArr
 };
+
+console.log(insertIntoarr(obj5, '5e216bc925243c901a802027'));
 
 
 // Exercise 5
